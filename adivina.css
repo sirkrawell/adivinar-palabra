@@ -1,0 +1,169 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: helvetica;
+}
+
+ html,body { height: 100%}
+
+.contenedor {
+	height: 100%;
+	background-image: linear-gradient(#aef0ff, #ff7b75 ,#9f57ff);
+	text-align: center;
+}
+
+.cabecera,
+.pie {
+	background-color: #444444;
+	color: #ffff;
+}
+
+.contenido {
+	position: relative;
+	bottom: 50px;
+}
+
+.pie {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+
+
+.cabecera__titulo,
+.pie__titulo {
+	padding: 2%;
+	text-align: center;
+}
+
+.cajaDeLetras {
+	padding: 5%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+/* Estilos de las cajas de letras */
+
+.cajaDeLetras__letra {
+	padding: 2%;
+	border: 5px solid #fff;
+	border-radius: 10%;
+	display: inline-block;
+	margin: 0 1%;
+	animation: rotacion 1s;
+	
+}
+
+.cajaDeLetras__letra--verde {
+	background-color: #40b764;
+	color: #fff;
+	transition: .5s all;
+	transition-delay: .1s;
+}
+
+.cajaDeLetras__letra--rojo {
+	background-color: #f95353;
+	color: #fff;
+	transition: .5s all;
+	transition-delay: .4s;
+}
+
+.cajaDeLetras__letra span {
+	font-size: 2.5em;
+}
+
+.cajaDeLetra--giro {
+	animation-name: rotacion;
+	animation-duration: 1s;
+}
+
+
+
+@keyframes rotacion {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+
+	}
+}
+
+/*----------------------------------------------------------*/
+
+.caja_tabla {
+	padding: 0 30%;
+	font-size: 1.2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.tabla {
+	max-width: auto;
+	background-color: #0002;
+	padding: 2%;
+	font-weight: 600;
+	text-align: center;
+
+}
+
+td {
+	padding: 1% 50px;
+}
+
+/* Boton reiniciar */
+
+.caja_reiniciar {
+	padding: 2%;
+	text-align: center;
+}
+
+.caja_reiniciar button {
+	font-size: 1.5em;
+	font-weight: 650;
+	padding: 1% 2%;
+	outline: none;
+	border: 4px solid #fff;
+	background-color: transparent;
+	transition: .3s all;
+	cursor: pointer;
+}
+
+.caja_reiniciar button:hover {
+	background-color: #fff;
+	color: #111;
+	
+	
+}
+
+
+
+
+/*-------------------------------------------------------------*/
+
+.mensaje {
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+}
+
+.mensaje__texto {
+	font-size: 1.5em;
+	font-family: helvetica;
+	font-weight: 700;
+	border: 5px solid #fff;
+	padding: 2%;
+
+}
+
+@media only screen and (max-width: 1312px) {
+	.contenido {
+		bottom: 0;
+	}
+
+}

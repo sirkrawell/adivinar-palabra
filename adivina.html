@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adivina</title>
+	<link rel="stylesheet" type="text/css" href="adivina.css">
+	<script defer type="text/javascript" src="ema.js"></script>
+</head>
+<body id="cuerpo">
+	<div class="contenedor">
+		<header class="cabecera">
+			<h1 class="cabecera__titulo">Adivina.io</h1>
+		</header>
+
+		<main class="contenido" id="content"> 
+			<div class="cajaDeLetras" id="cajaDeLetra">
+				 <!-- <div class="cajaDeLetras__letra"><span>?</span></div> --> 
+			</div>
+			<div class="caja_tabla">
+				<h2>Info</h2>
+				<table class="tabla">
+					<tbody>
+						<tr>
+							<td>Letra pulsada</td>
+							<td id="letras_pulsadas">$</td>
+						</tr>
+						<tr>
+							<td>Intentos</td>
+							<td id="intentos">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="caja_reiniciar">
+				<button class="boton_reiniciar" id="btn-reiniciar">Reiniciar</button>
+			</div>
+			<div class="mensaje">
+				<p class="mensaje__texto" id="mensaje__txt">Tienes 2x intentos por cada palabra</p>
+			</div>
+			
+		</main>
+
+		<footer class="pie">
+			<h2 class="pie__titulo">DLias</h2>
+		</footer>
+		
+	</div>
+
+</body>
+</html>
