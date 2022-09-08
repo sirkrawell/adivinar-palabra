@@ -31,7 +31,7 @@ let intentosContador = 0 // Esto se mostrara en la tabla, son los intentos del u
 let contadorPalabra = 0  // Para saber si la comparacion entre los input del usuario son iguales a las letras de la palabra
 						// asi sabre si la persona gano
 
-let maxIntentos = cantidadDeElementos * 2 // Numero maximo de intentos por palabra
+let maxIntentos = cantidadDeElementos * 3 // Numero maximo de intentos por palabra
 
 let $intentos = document.getElementById("intentos")
 let $letraPulsada = document.getElementById("letras_pulsadas")
